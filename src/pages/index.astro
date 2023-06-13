@@ -1,4 +1,5 @@
 ---
+import Header from "../components/Header.astro";
 import CheckAndCross from "../components/CheckAndCross.astro";
 import WithoutEffort from "../components/WithoutEffort.astro";
 import HousesPartners from "../components/HousesPartners.astro";
@@ -9,7 +10,7 @@ import Footer from "../components/Footer.astro";
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/airbnb_sign.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Сдайте жилье на Airbnb</title>
@@ -20,7 +21,7 @@ import Footer from "../components/Footer.astro";
 	
 	<!-- <MainLayout padding = "padding:0 100px 0 100px;"></MainLayout> -->
 
-	
+	<Header/>
 	<WithoutEffort/>
 	<CheckAndCross/>
 	<HousesPartners/>
