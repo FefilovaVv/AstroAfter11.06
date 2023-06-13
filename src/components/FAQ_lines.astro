@@ -1,0 +1,115 @@
+---
+import { Props } from "astro";
+const { textH3 = "" } = Astro.props as Props;
+const { textH2 = "" } = Astro.props as Props;
+const { textP = "" } = Astro.props as Props;
+const { textA = "" } = Astro.props as Props;
+---
+
+<script>
+
+    const simbol = document.getElementById("simbol");
+    const pDrop = document.querySelectorAll(".p_drop");
+    const wrapLines = document.querySelectorAll(".wrap_line");
+
+    wrapLines.forEach((wrapLine) => {
+        const pDrop = wrapLine.querySelector(".p_drop");
+        wrapLine.addEventListener("click", () => {
+            pDrop.classList.toggle("show-open");
+            pDrop.classList.toggle("show-close");
+        });
+    });
+</script>
+
+<style>
+     h2{font-size: 2.3rem;
+    width: 230px;}
+    .wrap_line {
+        border-bottom: 2px solid #e8e8e8;
+        padding: 20px 0 30px 0;
+    }
+    .wrapFlex.h3 {column-gap: 300px;}
+    .wrapFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    h3 {
+        margin: 0;
+        font-size: 1.6rem;
+        font-weight: normal;
+    }
+    img {
+        width: 20px;
+    }
+    .scale {
+        transform: scaleY(-1);
+    }
+    .p_drop {
+        display: none;
+        font-size: 1.3rem;
+        margin: 0;
+        line-height: 1.5rem;
+        color: #858585;
+        overflow: hidden;
+    }
+    .show-open {
+        display: block;
+        max-height: 300px;
+        animation: open 1s ease;
+    }
+    .show-close {
+        display: block;
+        max-height: 0;
+        animation: close 1s ease;
+    }
+
+    @keyframes open {
+        0% {
+            max-height: 0;
+            opacity: 0;
+        }
+        100% {
+            max-height: 300px;
+            opacity: 1;
+        }
+    }
+    @keyframes close {
+        0% {
+            max-height: 300px;
+            opacity: 1;
+        }
+        100% {
+            max-height: 0;
+            opacity: 0;
+        }
+    }
+    a{color: black;}
+    @media (min-width: 0px) and (max-width: 1100px) {
+        .wrapFlex.h3 {display: block;
+        column-gap: 0;}
+        .wrap_line {
+        padding: 0px 0 30px 0;
+    }
+    }
+</style>
+
+<div class="wrapFlex h3">
+
+<div><h2>{textH2}</h2></div>
+
+<div>
+<div class="wrap_line" id="wrap_line">
+    <div class="wrapFlex">
+        <h3>{textH3}</h3>
+        <img src="simbol.svg" alt="simbol" id="simbol" />
+    </div>
+    <p class="p_drop show-close" id="p_drop">
+        {textP} <a href="*"> <br>{textA}</a>
+    </p>
+</div>
+</div>
+
+</div>
+

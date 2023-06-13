@@ -1,0 +1,102 @@
+<style>
+    main {
+        padding: 0 90px 100px 90px;
+    }
+    h2 {
+        font-size: 2.3rem;
+        text-align: center;
+    }
+    .img_media_1200px {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img_media_700px {
+        display: none;
+    } 
+    .wrapFlex {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .help {
+        display: inline;
+    }
+    h3 {
+        margin: 0;
+        padding: 40px 0 10px;
+    }
+    p {
+        font-size: 1.2rem;
+        margin: 0;
+        line-height: 1.5rem;
+        color: #858585;
+    }
+    @media (min-width: 0px) and (max-width: 1100px) {
+        main {
+            padding: 50px 40px;
+        }
+        .wrapFlex {
+            display: block;
+        }
+        h2 {
+        font-size: 2.3rem;
+        text-align: left;
+    }
+    }
+    @media (min-width: 0px) and (max-width: 700px) {
+        main {
+            padding: 50px 25px;
+        }
+        .img_media_1200px {
+            display: none;
+        }
+        .img_media_700px {
+            display: block;
+            width: 110%;
+            margin: 0 -25px 0 -25px ;
+        }}
+</style>
+
+<main>
+    <h2>Запуститесь без труда с «Airbnb Старт»</h2>
+
+    <img
+    class="img_media_1200px"
+    src="../withoutEffort.webp"
+    alt="withoutEffort"
+/>
+<img
+    class="img_media_700px"
+    src="../withoutEffort_mobile.webp"
+    alt="withoutEffort"
+/>
+    <div class="wrapFlex">
+        <div class="help">
+            <h3>Советы персонального наставника</h3>
+            <p>
+                Мы познакомим вас с суперхозяином, живущим в вашем регионе, и он
+                ответит на все вопросы, серьезные и не очень. Вы можете общаться
+                в чате и созваниваться — по телефону или с видео.
+            </p>
+        </div>
+        <div class="help">
+            <h3>Первое бронирование — от опытного путешественника</h3>
+            <p>
+                Если захотите, первое бронирование сможет оформить только гость,
+                у которого в истории как минимум три поездки и хорошая репутация
+                на Airbnb.
+            </p>
+        </div>
+        <div class="help">
+            <h3>Специализированная помощь от Airbnb</h3>
+            <p>
+                Новички одним касанием могут связаться с сотрудниками поддержки,
+                которые умеют решать любые проблемы: хоть с аккаунтом, хоть с
+                выставлением счета.
+            </p>
+        </div>
+    </div>
+</main>

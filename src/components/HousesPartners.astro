@@ -1,0 +1,78 @@
+---
+import ButtonMore from "./ButtonMore.astro";
+---
+
+<style>
+    main {
+        padding: 20px 150px;
+    }
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .wrapFlex {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .wrap_card {
+        display: inline;
+    }
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .p_small {
+        font-size: 0.8rem;
+        margin: 0;
+        text-align: center;
+    }
+    .p_big {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 40px 0 0 0;
+        text-align: center;
+        line-height: 1.8rem;
+    }
+    @media (min-width: 0px) and (max-width: 1100px) {
+        main {
+            padding: 80px 40px;
+        }
+        .p_big{text-align: left;
+        padding-bottom: 40px;}
+    }
+</style>
+
+<main>
+    <h2>Дома — партнеры Airbnb</h2>
+    <div class="wrapFlex">
+        <div class="wrap_card">
+            <img src="flat1.webp" alt="квартира" />
+            <p class="p_small">
+                <b>Квартиры в жилом комплексе Park 12</b>
+                <br /> Сан-Диего (Калифорния)
+            </p>
+        </div>
+        <div class="wrap_card">
+            <img src="flat2.webp" alt="квартира" />
+            <p class="p_small">
+                <b>Old Town Apartments</b>
+                <br />Скоттсдейл (Аризона)
+            </p>
+        </div>
+        <div class="wrap_card">
+            <img src="flat3.webp" alt="квартира" />
+            <p class="p_small">
+                <b>525 Olive Apartments</b>
+                <br /> Сан-Диего (Калифорния)
+            </p>
+        </div>
+    </div>
+    <p class="p_big">
+        Мы сотрудничаем с многоквартирными комплексами повсюду в США. Здесь
+        можно снимать жилье постоянно и сдавать его на короткий срок на Airbnb.
+        Узнайте подробности и сколько можете зарабатывать.
+    </p>
+    <ButtonMore />
+</main>

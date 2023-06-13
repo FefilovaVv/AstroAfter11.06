@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="18.980427"
+   height="10.071351"
+   viewBox="0 0 5.0219045 2.6647115"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="simbol.svg"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="false"
+     inkscape:zoom="26.670079"
+     inkscape:cx="8.5301584"
+     inkscape:cy="3.2245873"
+     inkscape:window-width="1280"
+     inkscape:window-height="750"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7974"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7966"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7910"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.8008243,-3.3645033)">
+    <path
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.48894;stroke-dasharray:none"
+       d="m 1.962977,3.5497801 c 0,0 2.5910744,2.296481 2.5910744,2.296481"
+       id="path7964"
+       inkscape:path-effect="#path-effect7966"
+       inkscape:original-d="m 1.962977,3.5497801 2.5910744,2.296481"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.509811;stroke-dasharray:none"
+       d="m 6.6476463,3.5497675 c 0,0 -2.4275952,2.2941831 -2.4275952,2.2941831"
+       id="path7972"
+       inkscape:path-effect="#path-effect7974"
+       inkscape:original-d="M 6.6476463,3.5497675 4.2200511,5.8439506"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
