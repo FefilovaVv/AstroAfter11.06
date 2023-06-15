@@ -4,16 +4,14 @@
         justify-content: space-between;
         column-gap: 50px;
         align-items: flex-start;
-
     }
     .wrapGrid {
         display: grid;
         row-gap: 18px;
-        
     }
-    
-    h4 {margin: 10px 0 5px 0;
-    
+
+    h4 {
+        margin: 10px 0 5px 0;
     }
     a {
         display: block;
@@ -23,38 +21,32 @@
     a:hover {
         text-decoration: underline;
     }
-    @media (min-width: 731px) and (max-width: 1100px) { 
+    @media (min-width: 731px) and (max-width: 1100px) {
         .wrapFlex {
-        display: block;
-    }
-    .wrapGrid {
-        display: grid;
-        grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
-        column-gap: 30px;
-        row-gap: 0;
-        border-bottom: 2px solid #e8e8e8;
-        height: 140px;
-    }
-    .wrap_h4  {
-        grid-column: 1 / span 3;
-    }   
+            display: block;
+        }
+        .wrapGrid {
+            display: grid;
+            grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+            gap: 0 30px;
+            border-bottom: 2px solid #e8e8e8;
+            height: 140px;
+        }
+        .wrap_h4 {
+            grid-column: 1 / span 3;
+        }
     }
 
-
-    @media (min-width: 0px) and (max-width: 730px) { 
+    @media (min-width: 0px) and (max-width: 730px) {
         .wrapFlex {
-        display: block;
-    }
-    .wrapGrid {
-        padding: 20px 0 20px 0;
+            display: block;
+        }
+        .wrapGrid {
+            padding: 20px 0 20px 0;
+            border-bottom: 2px solid #e8e8e8;
+        }
 
-        border-bottom: 2px solid #e8e8e8;
     }
-    .wrap_h4  {
-       
-    }   
-    }
-
 </style>
 
 <div class="wrapFlex">

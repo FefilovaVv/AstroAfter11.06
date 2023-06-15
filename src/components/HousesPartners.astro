@@ -1,5 +1,5 @@
 ---
-import ButtonMore from "./ButtonMore.astro";
+import ButtonMore from "./Miscellanea /ButtonMore.astro";
 ---
 
 <style>
@@ -7,7 +7,7 @@ import ButtonMore from "./ButtonMore.astro";
         padding: 20px 150px;
     }
     h2 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         text-align: center;
     }
 
@@ -39,8 +39,22 @@ import ButtonMore from "./ButtonMore.astro";
         main {
             padding: 80px 40px;
         }
-        .p_big{text-align: left;
-        padding-bottom: 40px;}
+        h2 {
+            text-align: left;
+        }
+        .p_big {
+            text-align: left;
+            padding-bottom: 40px;
+        }
+    }
+    @media (min-width: 0px) and (max-width: 750px) {
+        main {
+            padding: 50px 20px;
+        }
+        .p_big {
+            font-size: 1.2rem;
+            line-height: 1.3rem;
+        }
     }
 </style>
 

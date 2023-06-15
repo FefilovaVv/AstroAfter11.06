@@ -29,7 +29,7 @@ const { textA = "" } = Astro.props as Props;
         border-bottom: 2px solid #e8e8e8;
         padding: 20px 0 30px 0;
     }
-    .wrapFlex.h3 {
+    .wrapFlex.main {
         column-gap: 300px;
     }
     .wrapFlex {
@@ -92,7 +92,7 @@ const { textA = "" } = Astro.props as Props;
         color: black;
     }
     @media (min-width: 0px) and (max-width: 1100px) {
-        .wrapFlex.h3 {
+        .wrapFlex.main {
             display: block;
             column-gap: 0;
         }
@@ -105,15 +105,15 @@ const { textA = "" } = Astro.props as Props;
     }
     @media (min-width: 0px) and (max-width: 750px) {
         .wrap_line {
-            padding: 0px 0 10px 0;
+            padding: 0px 0 0px 0;
         }
         h3 {
             font-size: 1.2rem;
-        }   
+        }
     }
 </style>
 
-<div class="wrapFlex h3">
+<div class="wrapFlex main">
     <div><h2>{textH2}</h2></div>
 
     <div>
