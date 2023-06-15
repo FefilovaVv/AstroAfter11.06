@@ -1,34 +1,31 @@
 <style>
     main {
         padding: 0 90px 100px 90px;
+        overflow: hidden;
     }
-    h2 {
+    .withoutEffort_h2 {
         font-size: 2.3rem;
         text-align: center;
     }
-    .img_media_1200px {
+    .withoutEffort_img {
         width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        object-fit: cover;
     }
-    .img_media_700px {
-        display: none;
-    }
+
     .wrapFlex {
         display: flex;
         justify-content: space-between;
         gap: 30px;
     }
 
-    .help {
+    .withoutEffort_help {
         display: inline;
     }
-    h3 {
+    .withoutEffort_h3 {
         margin: 0;
         padding: 40px 0 10px;
     }
-    p {
+    .withoutEffort_p {
         font-size: 1.2rem;
         margin: 0;
         line-height: 1.5rem;
@@ -41,7 +38,7 @@
         .wrapFlex {
             display: block;
         }
-        h2 {
+        .withoutEffort_h2 {
             font-size: 2.3rem;
             text-align: left;
         }
@@ -50,50 +47,46 @@
         main {
             padding: 0px 25px 50px 25px;
         }
-        .img_media_1200px {
-            display: none;
-        }
-        .img_media_700px {
-            display: block;
-            width: 110%;
-            margin: 0 -25px 0 -25px;
+        .withoutEffort_img {
+            width: 245%;
+            object-fit: cover;
+            margin-left: -73%;
         }
     }
 </style>
 
 <main>
-    <h2>Запуститесь без труда с «Airbnb Старт»</h2>
+    <h2 class="withoutEffort_h2">Запуститесь без труда с «Airbnb Старт»</h2>
 
     <img
-        class="img_media_1200px"
-        src="./withoutEffort.webp"
+        class="withoutEffort_img"
+        src="withoutEffort.webp"
         alt="withoutEffort"
     />
-    <img
-        class="img_media_700px"
-        src="./withoutEffort_mobile.webp"
-        alt="withoutEffort"
-    />
-    <div class="wrapFlex">
-        <div class="help">
-            <h3>Советы персонального наставника</h3>
-            <p>
+    <div class="withoutEffort_wrapFlex">
+        <div class="withoutEffort_help">
+            <h3 class="withoutEffort_h3">Советы персонального наставника</h3>
+            <p class="withoutEffort_p">
                 Мы познакомим вас с суперхозяином, живущим в вашем регионе, и он
                 ответит на все вопросы, серьезные и не очень. Вы можете общаться
                 в чате и созваниваться — по телефону или с видео.
             </p>
         </div>
-        <div class="help">
-            <h3>Первое бронирование — от опытного путешественника</h3>
-            <p>
+        <div class="withoutEffort_help">
+            <h3 class="withoutEffort_h3">
+                Первое бронирование — от опытного путешественника
+            </h3>
+            <p class="withoutEffort_p">
                 Если захотите, первое бронирование сможет оформить только гость,
                 у которого в истории как минимум три поездки и хорошая репутация
                 на Airbnb.
             </p>
         </div>
-        <div class="help">
-            <h3>Специализированная помощь от Airbnb</h3>
-            <p>
+        <div class="withoutEffort_help">
+            <h3 class="withoutEffort_h3">
+                Специализированная помощь от Airbnb
+            </h3>
+            <p class="withoutEffort_p">
                 Новички одним касанием могут связаться с сотрудниками поддержки,
                 которые умеют решать любые проблемы: хоть с аккаунтом, хоть с
                 выставлением счета.
