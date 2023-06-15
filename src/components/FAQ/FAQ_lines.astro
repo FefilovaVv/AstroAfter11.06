@@ -96,6 +96,7 @@ const { textA = "" } = Astro.props as Props;
         color: black;
     }
     @media (min-width: 0px) and (max-width: 1100px) {
+       
         .wrapFlex.main {
             display: block;
             column-gap: 0;
@@ -106,13 +107,23 @@ const { textA = "" } = Astro.props as Props;
         h3 {
             font-size: 1.4rem;
         }
+        .p_drop{
+            font-size: 1.2rem;
+        }
     }
     @media (min-width: 0px) and (max-width: 750px) {
+        h2 {
+        font-size: 1.5rem;
+    }
         .wrap_line {
             padding: 0px 0 0px 0;
         }
         h3 {
-            font-size: 1.2rem;
+            font-size: 1.05rem;
+        }
+        .p_drop{
+            font-size: 0.9rem;
+            line-height: 1.3rem;
         }
     }
 </style>
