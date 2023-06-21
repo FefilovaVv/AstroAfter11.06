@@ -1,24 +1,24 @@
 <style>
-    .wrapFlex {
+     .header_wrapFlex {
         position: sticky;
         top: 0px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 25px 35px;
+        padding: 15px 35px;
         background-color: white;
-    }
-    img {
+    } 
+     .header_image{
         width: 30px;
         height: 30px;
     }
-    h4 {
+    .header_question {
         display: inline;
         padding-right: 20px;
         font-weight: 400;
-    }
-    a {
-        font-size: 1.35rem;
+    } 
+     .header_button {
+        font-size: 1.3rem;
         text-decoration: none;
         color: white;
         background: linear-gradient(
@@ -28,12 +28,53 @@
         );
         padding: 10px 20px;
         border-radius: 7px;
+        border: none;
+    } 
+    @media (min-width: 0px) and (max-width: 750px) {
+         .header_wrapFlex {
+            position: static;
+            padding: 0;
+        } 
+         .header_upperPartContainer {
+            width: 100%;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            padding: 10px 10px;
+            background-color: white; 
+        } 
+        .header_lowerPartContainer {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            background-color: white;
+            padding: 0 20px 10px 20px;
+            box-sizing: border-box;
+        }
+        .header_question {
+            display: block;
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        .header_button {
+            width: 100%;
+            display: block;
+            margin: 0;
+            text-align: center;
+        }
     }
 </style>
-<div class="wrapFlex">
-    <img src="airbnb_sign.png" alt="значoк airbnb" />
-    <div>
-        <h4>Готовы запустить свой Airbnb?</h4>
-        <a href="*">Airbnb Старт</a>
+<header class="header_wrapFlex">
+    <div class="header_upperPartContainer">
+         <img class="header_image" src="airbnb_sign.png" alt="значoк airbnb" /> 
     </div>
-</div>
+    <div class="header_lowerPartContainer">
+        <div>
+            <h4 class="header_question">Готовы запустить свой Airbnb?</h4>
+            <button class="header_button" href="*">Airbnb Старт</button>
+        </div>
+    </div>
+</header>

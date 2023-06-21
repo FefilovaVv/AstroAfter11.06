@@ -1,5 +1,5 @@
 <style>
-    .wrapFlex {
+    .FAQ_wrap-flex {
         display: flex;
         align-items: center;
         background-color: white;
@@ -7,22 +7,22 @@
         overflow: hidden;
         column-gap: 80px;
     }
-    .wrapRight {
+    .FAQ_wrap-right-side {
         display: inline;
     }
-    .img_media_1200px_750px {
+    .FAQ_img-1200px-750px {
         width: 470px;
     }
-    .img_media_1100px {
+    .FAQ_img-1100px {
         display: none;
     }
-    h3 {
+    .FAQ_title {
         font-size: 2rem;
         margin: 0;
         font-weight: 400;
         letter-spacing: 1px;
     }
-    p {
+    .FAQ_text {
         margin: 0;
         padding-top: 15px;
         line-height: 1.5rem;
@@ -31,7 +31,7 @@
         font-weight: lighter;
         letter-spacing: 1px;
     }
-    .more {
+    .FAQ_more {
         color: black;
         text-decoration: none;
         background: white;
@@ -39,41 +39,41 @@
         padding: 10px 15px;
         border-radius: 10px;
     }
-    .more:hover {
+    .FAQ_more:hover {
         background: rgb(234, 233, 233);
     }
     @media (min-width: 0px) and (max-width: 1100px) {
-        .wrapFlex {
+        .FAQ_wrap-flex {
             column-gap: 40px;
         }
-        .img_media_1200px_750px {
+        .FAQ_img-1200px-750px {
             display: none;
         }
-        .img_media_1100px {
+        .FAQ_img-1100px {
             display: block;
             width: 350px;
         }
-        h3 {
+        .FAQ_title {
         font-size: 1.8rem;
         margin: 0;
     }
     }
     @media (min-width: 0px) and (max-width: 750px) {
-        .img_media_1100px {
+        .FAQ_img-1100px {
             display: none;
         }
-        .img_media_1200px_750px {
+        .FAQ_img-1200px-750px {
             display: block;
             width: 100%;
         }
-        .wrapFlex {
+        .FAQ_wrap-flex {
             display: block;
         }
-        .wrapRight {
+        .FAQ_wrap-right-side {
             display: block;
             padding: 30px;
         }
-        p {
+        .FAQ_text {
         font-size: 1.2rem;
         margin: 0;
         padding-top: 10px;
@@ -84,21 +84,21 @@
     }
 </style>
 
-<div class="wrapFlex">
+<div class="FAQ_wrap-flex">
     <img
-        class="img_media_1200px_750px"
+        class="FAQ_img-1200px-750px"
         src="./lastQuestions_narrow.webp"
         alt="Остались вопросы?"
     />
     <img
-        class="img_media_1100px"
+        class="FAQ_img-1100px"
         src="./lastQuestions.webp"
         alt="Остались вопросы?"
     />
 
-    <div class="wrapRight">
-        <h3>Остались вопросы?</h3>
-        <p>Посоветуйтесь с суперхозяином, живущим поблизости.</p>
-        <a class="more" href="*">Поиск наставника</a>
+    <div class="FAQ_wrap-right-side">
+        <h3 class="FAQ_title">Остались вопросы?</h3>
+        <p class="FAQ_text">Посоветуйтесь с суперхозяином, живущим поблизости.</p>
+        <a class="FAQ_more" href="*">Поиск наставника</a>
     </div>
 </div>

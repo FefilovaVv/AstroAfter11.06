@@ -1,0 +1,97 @@
+<style>
+    .FooterUpperPart_wrap-flex {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 50px;
+        align-items: flex-start;
+    }
+    .FooterUpperPart_wrap-grid {
+        display: grid;
+        row-gap: 18px;
+    }
+
+    .FooterUpperPart_title {
+        margin: 10px 0 5px 0;
+        font-weight: 400;
+    }
+    .FooterUpperPart_link {
+        display: block;
+        color: #414141;
+        text-decoration: none;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+    .FooterUpperPart_link:hover {
+        text-decoration: underline;
+    }
+    @media (min-width: 731px) and (max-width: 1100px) {
+        .FooterUpperPart_wrap-flex {
+            display: block;
+        }
+        .FooterUpperPart_wrap-grid {
+            display: grid;
+            grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+            gap: 0 30px;
+            border-bottom: 2px solid #e8e8e8;
+            height: 140px;
+        }
+        .FooterUpperPart_wrap-title {
+            grid-column: 1 / span 3;
+        }
+    }
+
+    @media (min-width: 0px) and (max-width: 730px) {
+        .FooterUpperPart_wrap-flex {
+            display: block;
+            padding-bottom: 100px;
+        }
+        .FooterUpperPart_wrap-grid {
+            padding: 20px 0 20px 0;
+            border-bottom: 2px solid #e8e8e8;
+        }
+    }
+</style>
+
+<div class="FooterUpperPart_wrap-flex">
+    <div class="FooterUpperPart_wrap-grid">
+        <div class="FooterUpperPart_wrap-title">
+            <h4 class="FooterUpperPart_title">Поддержка</h4 class="FooterUpperPart_title">
+        </div>
+        <a class="FooterUpperPart_link" href="*">Центр помощи</a>
+        <a class="FooterUpperPart_link" href="*">AirCover</a>
+        <a class="FooterUpperPart_link" href="*">Доступная среда</a>
+        <a class="FooterUpperPart_link" href="*">Отмена в период пандемии</a>
+        <a class="FooterUpperPart_link" href="*">Действия Airbnb во время пандемии</a>
+        <a class="FooterUpperPart_link" href="*">Сообщить о проблеме в районе</a>
+    </div>
+    <div class="FooterUpperPart_wrap-grid">
+        <div class="FooterUpperPart_wrap-title">
+            <h4 class="FooterUpperPart_title">Сообщество</h4 class="FooterUpperPart_title">
+        </div>
+        <a class="FooterUpperPart_link" href="*">Airbnb.org: жилье для пострадавших от бедствия</a>
+        <a class="FooterUpperPart_link" href="*">Борьба с дискриминацией</a>
+    </div>
+    <div class="FooterUpperPart_wrap-grid">
+        <div class="FooterUpperPart_wrap-title">
+            <h4 class="FooterUpperPart_title">Прием гостей</h4 class="FooterUpperPart_title">
+        </div>
+        <a class="FooterUpperPart_link" href="*">Сдайте жилье на Airbnb</a>
+        <a class="FooterUpperPart_link" href="*">AirCover для хозяев</a>
+        <a class="FooterUpperPart_link" href="*">Ресурсы для хозяев</a>
+        <a class="FooterUpperPart_link" href="*">Форум сообщества</a>
+        <a class="FooterUpperPart_link" href="*">Ответственный прием гостей</a>
+    </div>
+    <div class="FooterUpperPart_wrap-grid">
+        <div class="FooterUpperPart_wrap-title">
+            <h4 class="FooterUpperPart_title">Airbnb</h4 class="FooterUpperPart_title">
+        </div>
+        <a class="FooterUpperPart_link" href="*">Пресс-центр</a>
+        <a class="FooterUpperPart_link" href="*">Подробнее о новых функциях</a>
+        <a class="FooterUpperPart_link" href="*">Письмо от основателей Airbnb</a>
+        <a class="FooterUpperPart_link" href="*">Карьера в Airbnb</a>
+        <a class="FooterUpperPart_link" href="*">Для инвесторов</a>
+        <a class="FooterUpperPart_link" href="*">Подарочные карты</a>
+    </div>
+</div>
+
+

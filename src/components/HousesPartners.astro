@@ -3,28 +3,28 @@ import ButtonMore from "./Miscellanea /ButtonMore.astro";
 ---
 
 <style>
-    main {
+    section {
         padding: 20px 150px;
     }
-    h2 {
+    .HousesPartners_title {
         font-size: 2.8rem;
         text-align: center;
         font-weight: 400;
     }
 
-    .wrapFlex {
+    .HousesPartners_wrap-flex {
         display: flex;
         gap: 20px;
         justify-content: space-between;
     }
-    .wrap_card {
+    .HousesPartners_wrap_card {
         display: inline;
     }
-    img {
+    .HousesPartners_image {
         width: 100%;
         border-radius: 10px;
     }
-    .p_small {
+    .HousesPartners_text-small {
         font-size: 0.8rem;
         margin: 0;
         text-align: center;
@@ -33,7 +33,7 @@ import ButtonMore from "./Miscellanea /ButtonMore.astro";
         padding-top: 10px;
         font-weight: lighter;
     }
-    .p_big {
+    .HousesPartners_text-big {
         font-size: 1.5rem;
         margin: 0;
         padding: 40px 0 0 0;
@@ -43,60 +43,60 @@ import ButtonMore from "./Miscellanea /ButtonMore.astro";
         letter-spacing: 1px;
     }
     @media (min-width: 0px) and (max-width: 1100px) {
-        main {
+        section {
             padding: 80px 40px;
         }
-        h2 {font-size: 2.5rem;
+        .HousesPartners_title {font-size: 2.5rem;
             text-align: left;
         }
-        .p_big {
+        .HousesPartners_text-big {
             text-align: left;
             padding-bottom: 40px;
         }
     }
     @media (min-width: 0px) and (max-width: 750px) {
-        main {
+        section {
             padding: 50px 20px;
         }
-        h2 {
+        .HousesPartners_title {
         font-size: 2rem;
     }
-        .p_big {
+        .HousesPartners_text-big {
             font-size: 1.2rem;
             line-height: 1.4rem;
         }
     }
 </style>
 
-<main>
-    <h2>Дома — партнеры Airbnb</h2>
-    <div class="wrapFlex">
-        <div class="wrap_card">
-            <img src="flat1.webp" alt="квартира" />
-            <p class="p_small">
+<section>
+    <h2 class="HousesPartners_title">Дома — партнеры Airbnb</h2>
+    <div class="HousesPartners_wrap-flex">
+        <div class="HousesPartners_wrap_card">
+            <img class="HousesPartners_image" src="flat1.webp" alt="квартира" />
+            <p class="HousesPartners_text-small">
                 <b>Квартиры в жилом комплексе Park 12</b>
                 <br /> Сан-Диего (Калифорния)
             </p>
         </div>
-        <div class="wrap_card">
-            <img src="flat2.webp" alt="квартира" />
-            <p class="p_small">
+        <div class="HousesPartners_wrap_card">
+            <img class="HousesPartners_image" src="flat2.webp" alt="квартира" />
+            <p class="HousesPartners_text-small">
                 <b>Old Town Apartments</b>
                 <br />Скоттсдейл (Аризона)
             </p>
         </div>
-        <div class="wrap_card">
-            <img src="flat3.webp" alt="квартира" />
-            <p class="p_small">
+        <div class="HousesPartners_wrap_card">
+            <img class="HousesPartners_image" src="flat3.webp" alt="квартира" />
+            <p class="HousesPartners_text-small">
                 <b>525 Olive Apartments</b>
                 <br /> Сан-Диего (Калифорния)
             </p>
         </div>
     </div>
-    <p class="p_big">
+    <p class="HousesPartners_text-big">
         Мы сотрудничаем с многоквартирными комплексами повсюду в США. Здесь
         можно снимать жилье постоянно и сдавать его на короткий срок на Airbnb.
         Узнайте подробности и сколько можете зарабатывать.
     </p>
     <ButtonMore />
-</main>
+</section>

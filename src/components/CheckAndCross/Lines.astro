@@ -1,12 +1,6 @@
 ---
 import { Props } from "astro";
-const { textH4 = "" } = Astro.props as Props;
-const { textH5 = "" } = Astro.props as Props;
-const { textP = "" } = Astro.props as Props;
-const { imgSrcOption1 = "" } = Astro.props as Props;
-const { imgSrcOption2 = "" } = Astro.props as Props;
-const { imgAltOption1 = "" } = Astro.props as Props;
-const { imgAltOption2 = "" } = Astro.props as Props;
+const { textHeaderBig = "", textHeaderSmall = "", text = "", imgSrcOption1 = "", imgSrcOption2 = "", imgAltOption1 = "", imgAltOption2 = "" } = Astro.props as Props;
 ---
 
 <style>
@@ -78,13 +72,13 @@ const { imgAltOption2 = "" } = Astro.props as Props;
 <div class="wrap_line">
     <div class="flexWrap_h1_img">
         <div class="wrap_h">
-            <h4>{textH4}</h4>
-            <h5>{textH5}</h5>
+            <h4>{textHeaderBig}</h4>
+            <h5>{textHeaderSmall}</h5>
         </div>
         <div class="wrap_img">
-            <img class="option1" src={imgSrcOption1} alt={imgAltOption1} />
-            <img class="option2" src={imgSrcOption2} alt={imgAltOption2} />
+            <img src={imgSrcOption1} alt={imgAltOption1} />
+            <img src={imgSrcOption2} alt={imgAltOption2} />
         </div>
     </div>
-    <p>{textP}</p>
+    <p>{text}</p>
 </div>

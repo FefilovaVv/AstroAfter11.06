@@ -1,57 +1,55 @@
 ---
 import { Props } from "astro";
-const { textH3 = "" } = Astro.props as Props;
-const { textH2 = "" } = Astro.props as Props;
-const { textP = "" } = Astro.props as Props;
-const { textA = "" } = Astro.props as Props;
+const { titleMain = "", titleQuestion = "", textDrop = "", textLink = "" } = Astro.props as Props;
 ---
 
 <script>
-    const simbol = document.getElementById("simbol");
-    const pDrop = document.querySelectorAll(".p_drop");
-    const wrapLines = document.querySelectorAll(".wrap_line");
+    const symbol = document.getElementById("FAQ_symbol");
+    const pDrop = document.querySelectorAll(".FAQ_text-drop");
+    const wrapLines = document.querySelectorAll(".FAQ_wrap-line");
 
     wrapLines.forEach((wrapLine) => {
-        const pDrop = wrapLine.querySelector(".p_drop");
-        wrapLine.addEventListener("click", () => {
-            pDrop.classList.toggle("show-open");
-            pDrop.classList.toggle("show-close");
+        const pDrop = wrapLine.querySelector(".FAQ_text-drop");
+        wrapLine.addEventListener("click", function() {
+            this.getElementsByClassName('FAQ_symbol')[0].classList.toggle('FAQ_symbol-scale')
+            pDrop.classList.toggle("FAQ_text-open");
+            pDrop.classList.toggle("FAQ_text-close");
         });
     });
 </script>
 
 <style>
-    h2 {
+    .FAQ_title-main {
         font-size: 2.3rem;
         width: 230px;
         font-weight: 400;
     }
-    .wrap_line {
+    .FAQ_wrap-line {
         border-bottom: 2px solid #e8e8e8;
         padding: 20px 0 30px 0;
     }
-    .wrapFlex.main {
+    .FAQ_wrap-flex.main {
         column-gap: 300px;
     }
-    .wrapFlex {
+    .FAQ_wrap-flex {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-bottom: 10px;
     }
-    h3 {
+    .FAQ_title-question {
         margin: 0;
         font-size: 1.6rem;
         font-weight: normal;
         font-weight: 200;
     }
-    img {
-        width: 20px;
+    .FAQ_symbol {
+        width: 15px;
     }
-    .scale {
+    .FAQ_symbol-scale {
         transform: scaleY(-1);
     }
-    .p_drop {
+    .FAQ_text-drop {
         display: none;
         font-size: 1.3rem;
         margin: 0;
@@ -61,12 +59,12 @@ const { textA = "" } = Astro.props as Props;
         font-weight: lighter;
         letter-spacing: 1px;
     }
-    .show-open {
+    .FAQ_text-open {
         display: block;
         max-height: 300px;
         animation: open 1s ease;
     }
-    .show-close {
+    .FAQ_text-close {
         display: block;
         max-height: 0;
         animation: close 1s ease;
@@ -92,54 +90,53 @@ const { textA = "" } = Astro.props as Props;
             opacity: 0;
         }
     }
-    a {
+    .FAQ_link {
         color: black;
     }
     @media (min-width: 0px) and (max-width: 1100px) {
-       
-        .wrapFlex.main {
+        .FAQ_wrap-flex.main {
             display: block;
             column-gap: 0;
         }
-        .wrap_line {
+        .FAQ_wrap-line {
             padding: 0px 0 20px 0;
         }
-        h3 {
+        .FAQ_title-question {
             font-size: 1.4rem;
         }
-        .p_drop{
+        .FAQ_text-drop{
             font-size: 1.2rem;
         }
     }
     @media (min-width: 0px) and (max-width: 750px) {
-        h2 {
+        .FAQ_title-main {
         font-size: 1.5rem;
     }
-        .wrap_line {
-            padding: 0px 0 0px 0;
+        .FAQ_wrap-line {
+            padding: 0px 0 10px 0;
         }
-        h3 {
+        .FAQ_title-question {
             font-size: 1.05rem;
         }
-        .p_drop{
+        .FAQ_text-drop{
             font-size: 0.9rem;
             line-height: 1.3rem;
         }
     }
 </style>
 
-<div class="wrapFlex main">
-    <div><h2>{textH2}</h2></div>
+<div class="FAQ_wrap-flex main">
+    <div><h2 class="FAQ_title-main">{titleMain}</h2></div>
 
     <div>
-        <div class="wrap_line" id="wrap_line">
-            <div class="wrapFlex">
-                <h3>{textH3}</h3>
-                <img src="simbol.svg" alt="simbol" id="simbol" />
+        <div class="FAQ_wrap-line" id="FAQ_wrap-line">
+            <div class="FAQ_wrap-flex">
+                <h3 class="FAQ_title-question">{titleQuestion}</h3>
+                <img class="FAQ_symbol" src="symbol.svg" alt="symbol" id="FAQ_symbol" />
             </div>
-            <p class="p_drop show-close" id="p_drop">
-                {textP}
-                <a href="*"> <br />{textA}</a>
+            <p class="FAQ_text-drop FAQ_text-close" id="FAQ_text-drop">
+                {textDrop}
+                <a class="FAQ_link" href="*"> <br />{textLink}</a>
             </p>
         </div>
     </div>
